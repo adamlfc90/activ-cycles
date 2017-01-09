@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'adamrostron.co.uk.mysql',
+            'host'      => '178.62.5.125',
             'port'      => 3306,
-            'database'  => 'adamrostron_co_uk',
-            'username'  => 'adamrostron_co_uk',
-            'password'  => 'Hvc4iGZT',
+            'database'  => 'activcycles',
+            'username'  => 'adam',
+            'password'  => '123jamesnhr93',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
