@@ -1,0 +1,16 @@
+<?php
+$color = $title = "";
+
+if($extraParams['record']['attributes']['live']) {
+    $title = "Activate";
+    $color = "#008000";
+}
+else {
+    $title = "Deactivate";
+    $color = "#FF0000";
+}
+?>
+
+<div title="<?=$title?>">
+    <i class="icon-circle" aria-hidden="true" style="color: <?=$color?>"></i>
+</div>

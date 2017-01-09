@@ -1,0 +1,33 @@
+description = "Homepage"
+
+[staticPage]
+
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        {% partial "head-tags" %}
+
+    </head>
+    <body class="mod-homepage">
+        <div class="wrapper">
+
+            {% partial "header" %}
+
+            <main>
+                {% page %}
+                <iframe width="100%" height="450" frameborder="0" style="border:0;display:block;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAzdRpgVNh5ZJ7uZRZx8M6ukPTZtKVdg0Y&q=active+cycles+corbridge"></iframe>
+            </main>
+
+            {% partial "footer" %}
+
+        </div>
+    </body>
+    
+    {% partial "footer-tags" %}
+
+</html>
+{variable name="page_title" label="Title of page" tab="Content" type="text"}{/variable}
+{variable name="intro_text" label="Page Intro" tab="Content" type="richeditor"}{/variable}
+{variable name="page_image" label="Page Content Image" tab="Content" type="mediafinder" mode="image"}{/variable}

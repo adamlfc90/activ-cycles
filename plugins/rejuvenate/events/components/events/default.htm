@@ -1,0 +1,28 @@
+{% if __SELF__.events | length %}
+
+    {% for event in __SELF__.events %}
+        <div class="event">
+            <div class="event-title">
+                <p>
+                {% if event.url %}
+                    <a href="{{ event.url }}">{{ event.title }}</a>
+                {% else %}
+                    {{ event.title }}
+                {% endif %}
+                </p>
+            </div>
+            <div class="event-description">
+                <p>{{ event.description|raw }}</p>
+            </div>
+            <div class="event-description">
+                <p>{{ event.date }}</p>
+            </div>
+            <div class="event-description">
+                <p>{{ event.time }}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+{% else %}
+    <p>There's not events.</p>
+{% endif %}

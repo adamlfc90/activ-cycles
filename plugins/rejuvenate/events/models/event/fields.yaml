@@ -1,0 +1,68 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    details_section:
+        label: Details
+        type: section
+
+    title:
+        label: Title
+        type: text
+        span: left
+
+    slug:
+        label: Slug
+        type: text
+        span: right
+        preset: title
+
+    description:
+        label: Description
+        type: richeditor
+        format: raw
+
+    date:
+        label: Date
+        type: datepicker
+        mode: date
+        span: left
+
+    time:
+        label: Time
+        type: datepicker
+        mode: time
+        span: right
+
+    address_section:
+        label: Localization
+        type: section
+
+    address:
+        label: Address
+        type: textarea
+
+    map_helper:
+        type: hint
+        path: map_helper
+        span: left
+
+    map:
+        type: partial
+        span: right
+
+    lat:
+        label: Latitude
+        span: left
+        default: 53.80056888
+
+    lng:
+        label: Longitude
+        span: left
+        default: -1.54881716
+
+    live:
+        label: Live
+        type: switch
+        default: 1

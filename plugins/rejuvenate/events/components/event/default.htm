@@ -1,0 +1,17 @@
+{% set event = __SELF__.event %}
+
+{% if event %}
+
+    <div class="event-content">
+        <h2 class="event-title">{{ event.title }}</h2>
+        <div class="event-description">{{ event.description|raw }}</div>
+        <div class="event-date">{{ event.date }}</div>
+        <div class="event-time">{{ event.time }}</div>
+        <div class="event-address">{{ event.address|raw }}</div>
+        <div class="event-lat">{{ event.lat }}</div>
+        <div class="event-lng">{{ event.lng }}</div>
+    </div>
+
+{% else %}
+    <p>Sorry, the Event could not be found</p>
+{% endif %}

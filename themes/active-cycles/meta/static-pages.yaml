@@ -1,0 +1,6 @@
+static-pages:
+    index: {  }
+    events: {  }
+    bikes: {  }
+    menu: {  }
+    contact: {  }

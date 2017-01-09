@@ -1,0 +1,9 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    api_key:
+        label: Google Maps API key
+        span: left
+        commentAbove: Get an API Key from https://console.developers.google.com/apis

@@ -1,0 +1,28 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Title
+        searchable: true
+
+    description:
+        label: Description
+        type: section
+        searchable: true
+
+    date:
+        label: Date
+        searchable: true
+
+    time:
+        label: Time
+        searchable: true
+
+    address:
+        label: Address
+        searchable: true
+
+    live:
+        type: partial
