@@ -172,6 +172,10 @@ body {
 		width: 100%;
 	}
 
+	.coloured-cta-paragraph {
+		padding: 0 25px;
+	}
+
 }
 
 .coloured-cta:hover,
