@@ -1,0 +1,98 @@
+description = "menu"
+
+[staticPage]
+
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        {% partial "head-tags" %}
+
+    </head>
+    <body>
+        <div class="wrapper">
+
+            {% partial "header" %}
+
+            <div class="drill-hero" style="background-image:url('{{ header_image ? header_image|media : '' }}')">
+                <div class="coloured-cta-overlay hero-overlay"></div>
+                <h1 class="drill-hero-heading">{{ page_title }}</h1>
+            </div>
+
+            <main>  
+                <div class="container">
+                    <div class="page-intro">
+                        <h1 class="breadcrumbs"><a class="breadcrumbs-link" href="/">Home</a> / <a class="breadcrumbs-link" href="{{ this.page.url }}">{{ this.page.meta_title }}</a></h1>
+                        <div class="page-intro-line"></div>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-12">
+                                <div class="page-intro-text">
+                                    <p style="text-align:center;">Our aim is to provide a simple menu of good quality, home-made tasty food.</p>
+
+                                    <p style="text-align:center;">Most of the food on the menu is made from scratch here on the premises, with fresh ingredients. Please be patient, this is not a fast food restaurant; we cook your food thoroughly using the oven, rather than re-heating in the microwave.  The reason we stop serving lunches at 2.30pm is because we need time to prepare and bake the delicious foods available on this menu – the elves don’t come in at night to make them! From time to time we may sell out of items, we apologise if this is the case on the day of your visit.</p>
+
+                                    <p style="text-align:center;">We hope you enjoy your time with us.</p>
+                                </div>
+                            </div>
+                            <div class="menu">
+                            	<div class="menu-section">
+                            		<h2 class="menu-section-title">Breakfeast</h2>
+                            		<p class="menu-section-desc">(served 9.30am-11am)</p>
+                            		<div class="menu-item">
+                            			<p class="menu-item-desc">A large bowl of homemade porridge with either honey or warm spiced berries</p>
+                            			<p class="menu-item-price">£4.25</p>
+                            		</div>
+                            		<div class="menu-item">
+                            			<p class="menu-item-desc">Belgium waffles topped with chocolate spread or warm spiced berries &amp; natural yoghurt</p>
+                            			<p class="menu-item-price">£2.95</p>
+                            		</div>
+                            		<div class="menu-item">
+                            			<p class="menu-item-desc">Hot-kiln–roasted smoked salmon with scrambled eggs on buttered malted thick sliced toast</p>
+                            			<p class="menu-item-price">£4.60</p>
+                            		</div>
+                            		<div class="menu-item">
+                            			<p class="menu-item-desc">Scrambled eggs on buttered malted thick sliced toast</p>
+                            			<p class="menu-item-price">£3.85</p>
+                            		</div>
+                            	</div>
+                            	<div class="menu-section">
+                            		<div class="menu-item">
+                            			
+                            		</div>
+                            	</div>
+                            	<div class="menu-section">
+                            		<div class="menu-item">
+                            			
+                            		</div>
+                            	</div>
+                            	<div class="menu-section">
+                            		<div class="menu-item">
+                            			
+                            		</div>
+                            	</div>
+                            	<div class="menu-section">
+                            		<div class="menu-item">
+                            			
+                            		</div>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% page %}
+                </div>
+                {% partial "blocks/gallery-links.htm" %}
+            </main>
+
+            {% partial "footer" %}
+
+        </div>
+    </body>
+    
+    {% partial "footer-tags" %}
+
+</html>
+{variable name="page_title" label="Title of page" tab="Content" type="text"}{/variable}
+{variable name="intro_text" label="Page Intro" tab="Content" type="richeditor"}{/variable}
+{variable name="page_image" label="Page Content Image" tab="Content" type="mediafinder" mode="image"}{/variable}
+{variable name="header_image" label="Header Image" tab="Options" type="mediafinder" mode="image"}{/variable}
