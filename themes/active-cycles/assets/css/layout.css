@@ -166,6 +166,14 @@ body {
 	display: block;
 }
 
+@media (min-width: 0px) and (max-width: 960px) {
+
+	.coloured-cta {
+		width: 100%;
+	}
+
+}
+
 .coloured-cta:hover,
 .coloured-cta:focus {
 	text-decoration: none;
